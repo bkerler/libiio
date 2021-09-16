@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['modifier_141',['modifier',['../classiio_1_1Channel.html#ade4aa6fcb830ef383db4695e8b65ade0',1,'iio::Channel']]]
+  ['label_142',['label',['../classiio_1_1Device.html#a3342153fd26e43b710dd33b17cb126fc',1,'iio::Device']]]
 ];
