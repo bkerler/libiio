@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 2.8.7)
 project(iiod C)
+message(STATUS "Building iiod")
 
 include(FindBISON)
 include(FindFLEX)
@@ -57,7 +58,10 @@ endif()
 
 option(WITH_IIOD_SERIAL "Add serial (UART) support" ON)
 if (WITH_IIOD_SERIAL)
+	message(STATUS "iiod with serial support enabled")
 	set(IIOD_CFILES ${IIOD_CFILES} serial.c)
+else()
+	message(STATUS "iiod with serial support disabled")
 endif()
 
 add_executable(iiod ${IIOD_CFILES})
